@@ -1,4 +1,5 @@
 <?php
+
 require_once 'connection.php';
 //Lấy id trên thanh địa chỉ URL
 $pro_id = $_GET['id'];
@@ -18,3 +19,4 @@ $product = $stmt->fetch(PDO::FETCH_ASSOC);
     </div>
 </div>
 <?php include_once "layout/footer.php" ?>
+<?=(isset($_SESSION['user']))? "<p>ABC</p>": '' ?>
